@@ -10,7 +10,7 @@ func TestGetAPIKey(t *testing.T) {
 	headers := make(http.Header)
 	headers.Set("Authorization", "ApiKey my-api-key")
 	key, err := GetAPIKey(headers)
-	expectedKey := "my-api2-key"
+	expectedKey := "my-api-key"
 	if err != nil {
 		t.Errorf("Expected no error, got %v", err)
 	}
